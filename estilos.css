@@ -1,0 +1,291 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #191a55; /* Color de texto blanco */
+    background-color: #121212; /* Color de fondo oscuro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #361bca; 
+    text-decoration: none;
+  }
+  
+  main {
+    display: block;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #545bbb; 
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0c0808;
+    background-color: #6772cf; 
+    color: #1d20c7; 
+  }
+  
+  input[type="submit"] {
+    background-color: #090a09; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el menú */
+  header nav ul li:hover {
+    background-color: #0e0909; 
+  }
+  
+  header nav a:hover {
+    color: #010201; 
+  }
+  
+ 
+  .contacto {
+    background-color: #070505; 
+    padding: 20px;
+  }
+  
+  .contacto h1 {
+    color: #1d0bc2; 
+  }
+  
+  /* Estilos para la página de passline */
+  .passline {
+    background-color: #333; 
+    padding: 20px;
+  }
+  
+  .passline h1 {
+    color: #171f6d; 
+  }
+  
+  
+  .servicios {
+    background-color: #333; 
+    padding: 20px;
+  }
+  
+  .servicios h1 {
+    color: #261d7a; 
+  }
+  /* Inserta el código CSS aquí */
+.texto-techno {
+	text-align: center;
+}
+
+.texto-techno h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #372fa3; 
+	text-shadow: 2px 2px #000; 
+	animation: parpadeo 2s infinite; /* Animación de parpadeo */
+}
+
+.texto-techno p {
+	font-size: 18px;
+	color: #b9b4b4; /* Blanco */
+	text-shadow: 1px 1px #5f5959;
+	background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente negro */
+	padding: 10px;
+	border-radius: 10px;
+	animation: desplazamiento 3s infinite; /* Animación de desplazamiento */
+}
+
+body {
+    background-color: #000;
+    animation: fondo 10s infinite;
+  }
+  
+  @keyframes fondo {
+    0% {
+      background-color: #000;
+    }
+    50% {
+      background-color: #0f0529;
+    }
+    100% {
+      background-color: #000;
+    }
+  }
+  img {
+    animation: imagen 5s infinite;
+  }
+  
+  @keyframes imagen {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(1);
+    }
+  }
+  nav ul li a {
+    animation: navegacion 2s infinite;
+  }
+  
+  @keyframes navegacion {
+    0% {
+      color: #573afa;
+    }
+    50% {
+      color: #333;
+    }
+    100% {
+      color: #2007b1;
+    }
+  }
+  button[type="button"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #555;
+  }
+  
+  button[type="button"]:active {
+    background-color: #777;
+  }
+  
+  button[type="button"] {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+  }
+  
+  button[type="button"]:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #000; 
+    overflow: hidden;
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); 
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .banner::after {
+    content: "Underground Ar";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background-color: #000; 
+    overflow: hidden;
+  }
+  
+  .parlantes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .parlante {
+    width: 20%; 
+    height: 50%; 
+    background-color: #333; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .parlante.izquierdo {
+    transform: rotate(-30deg); 
+  }
+  
+  .parlante.derecho {
+    transform: rotate(30deg); 
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
